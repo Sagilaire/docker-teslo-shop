@@ -2,7 +2,10 @@ services:
   app:
     build:
       context: .
+      target: dev
       dockerfile: Dockerfile
+
+#    command: yarn start:dev
     volumes:
       - .:/app/
       - /app/node_modules

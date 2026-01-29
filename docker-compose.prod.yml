@@ -5,10 +5,6 @@ services:
       target: ${STAGE}
       dockerfile: Dockerfile
 
-#    command: yarn start:dev
-    volumes:
-      - .:/app/
-      - /app/node_modules
     container_name: nest-app
     ports:
       - ${PORT}:${PORT}

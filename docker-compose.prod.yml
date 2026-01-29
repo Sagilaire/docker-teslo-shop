@@ -5,6 +5,7 @@ services:
       target: ${STAGE}
       dockerfile: Dockerfile
 
+    image: nistalxd/teslo-shop-backend:1.5.0
     container_name: nest-app
     ports:
       - ${PORT}:${PORT}
